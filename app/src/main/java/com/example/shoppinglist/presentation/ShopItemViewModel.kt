@@ -19,6 +19,7 @@ class ShopItemViewModel : ViewModel() {
     private val editShopItemUseCase = EditShopItemUseCase(repository)
 
     private val _errorInputName = MutableLiveData<Boolean>()
+
     val errorInputName: LiveData<Boolean>
         get() = _errorInputName
 
